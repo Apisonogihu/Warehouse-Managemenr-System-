@@ -72,9 +72,8 @@ Create Table ViTri
 (
     MaViT varchar(10) primary key , 
     MaKV Varchar(5) not null, 
-    Ailse Varchar(5) , 
-    Rack varchar(5), 
-    Bin varchar (5) , 
+    Dãy Varchar(5) , 
+    Ô varchar(5), 
     MoTa NVARCHAR(255),
 	DungTich decimal , 
     CONSTRAINT FK_ViTri_KhuVuc FOREIGN KEY (MaKV) REFERENCES KhuVuc(MaKV)
@@ -596,4 +595,5 @@ BEGIN
     WHERE (TongLuyKe - SoLuong) < @SoLuongCanXuat;
 END;
 GO
+
 
