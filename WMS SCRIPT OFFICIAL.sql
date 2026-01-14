@@ -84,6 +84,7 @@ Create table Donvi
 (
     MaDonVi int Primary Key identity (1,1) , 
     TenDonVi nvarchar(255) , 
+	Ký hiệu nvarchar(5) ,
     TinhTrang bit , 
  Constraint TK_DV CHECK ( TinhTrang = 0 or TinhTrang =  1 ) 
 ); 
@@ -595,3 +596,4 @@ BEGIN
     WHERE (TongLuyKe - SoLuong) < @SoLuongCanXuat;
 END;
 GO
+
